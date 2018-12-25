@@ -4,7 +4,7 @@ import jieba
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 
 word_list=[]
-with open('static/九品芝麻官剧本.txt') as f:
+with open('static/merry.txt') as f:
     words = f.read()
 words = " ".join(jieba.cut(words))
 for word in words.split():
